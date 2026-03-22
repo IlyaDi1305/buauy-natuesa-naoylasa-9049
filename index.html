@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Профессиональный мастер маникюра и педикюра. Качественные услуги ногтевого сервиса в уютной атмосфере.">
+    <title>Елена Соколова — Мастер Маникюра</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <div class="container">
+            <nav class="nav">
+                <a href="#hero" class="logo">
+                    <span class="logo-text">Elena Sokolova</span>
+                    <span class="logo-subtitle">Nail Master</span>
+                </a>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#services" class="nav-link">Услуги</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#reviews" class="nav-link">Отзывы</a></li>
+                    <li><a href="#contact" class="nav-link">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title animate-on-scroll">
+                    <span class="hero-title-main">Искусство на кончиках пальцев</span>
+                    <span class="hero-title-sub">Профессиональный маникюр и педикюр</span>
+                </h1>
+                <p class="hero-description animate-on-scroll">
+                    Создаю уникальный дизайн ногтей с заботой о здоровье ваших рук. 
+                    Более 7 лет опыта, современные техники и премиум материалы.
+                </p>
+                <div class="hero-buttons animate-on-scroll">
+                    <a href="#contact" class="btn btn-primary">Записаться</a>
+                    <a href="#services" class="btn btn-secondary">Услуги и цены</a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Услуги</h2>
+                <p class="section-subtitle animate-on-scroll">Полный спектр ногтевого сервиса</p>
+            </div>
+
+            <div class="services-tabs">
+                <div class="tabs-nav">
+                    <button class="tab-btn active" data-tab="manicure">Маникюр</button>
+                    <button class="tab-btn" data-tab="pedicure">Педикюр</button>
+                    <button class="tab-btn" data-tab="design">Дизайн</button>
+                </div>
+
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="manicure">
+                        <div class="services-grid">
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">💅</div>
+                                <h3 class="service-title">Классический маникюр</h3>
+                                <p class="service-description">Обработка ногтевой пластины и кутикулы, придание формы, покрытие лаком</p>
+                                <p class="service-price">от 1200 ₽</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">✨</div>
+                                <h3 class="service-title">Аппаратный маникюр</h3>
+                                <p class="service-description">Деликатная обработка кутикулы и ногтевой пластины с помощью фрезера</p>
+                                <p class="service-price">от 1500 ₽</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">💎</div>
+                                <h3 class="service-title">Покрытие гель-лаком</h3>
+                                <p class="service-description">Стойкое покрытие премиум материалами, держится до 3 недель</p>
+                                <p class="service-price">от 1800 ₽</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">🌸</div>
+                                <h3 class="service-title">Укрепление ногтей</h3>
+                                <p class="service-description">Укрепление базой, гелем или акриловой пудрой для здоровья ногтей</p>
+                                <p class="service-price">от 2000 ₽</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="pedicure">
+                        <div class="services-grid">
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">👣</div>
+                                <h3 class="service-title">Классический педикюр</h3>
+                                <p class="service-description">Обработка стоп, ногтей, удаление огрубевшей кожи</p>
+                                <p class="service-price">от 2000 ₽</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">⚡</div>
+                                <h3 class="service-title">Аппаратный педикюр</h3>
+                                <p class="service-description">Глубокая обработка стоп и ногтей, идеален для проблемных ног</p>
+                                <p class="service-price">от 2500 ₽</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">🦋</div>
+                                <h3 class="service-title">SPA-педикюр</h3>
+                                <p class="service-description">Расслабляющая процедура с пилингом, массажем и увлажнением</p>
+                                <p class="service-price">от 3000 ₽</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">💫</div>
+                                <h3 class="service-title">Покрытие гель-лаком</h3>
+                                <p class="service-description">Стойкое покрытие ногтей на ногах</p>
+                                <p class="service-price">от 1500 ₽</p>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="tab-panel" id="design">
+                        <div class="services-grid">
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">🎨</div>
+                                <h3 class="service-title">Художественный дизайн</h3>
+                                <p class="service-description">Роспись, градиент, французский, геометрия</p>
+                                <p class="service-price">от 300 ₽/ноготь</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">💍</div>
+                                <h3 class="service-title">Декор стразами</h3>
+                                <p class="service-description">Украшение стразами, камнями, блестками</p>
+                                <p class="service-price">от 50 ₽/элемент</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">🌙</div>
+                                <h3 class="service-title">Втирки и эффекты</h3>
+                                <p class="service-description">Зеркальные, жемчужные, голографические покрытия</p>
+                                <p class="service-price">от 200 ₽/ноготь</p>
+                            </article>
+                            <article class="service-card animate-on-scroll">
+                                <div class="service-icon">🌺</div>
+                                <h3 class="service-title">Наращивание ногтей</h3>
+                                <p class="service-description">Наращивание гелем на формах или типсах</p>
+                                <p class="service-price">от 3500 ₽</p>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Галерея работ</h2>
+                <p class="section-subtitle animate-on-scroll">Мои лучшие работы</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll" style="background: linear-gradient(135deg, #f8b5d3 0%, #e89ac7 100%);">
+                    <div class="gallery-overlay">
+                        <h4>Нежный градиент</h4>
+                        <p>Омбре с декором</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="background: linear-gradient(135deg, #c9a0dc 0%, #b08cc9 100%);">
+                    <div class="gallery-overlay">
+                        <h4>Лавандовая мечта</h4>
+                        <p>Матовое покрытие</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="background: linear-gradient(135deg, #ffd1dc 0%, #ffb3c1 100%);">
+                    <div class="gallery-overlay">
+                        <h4>Романтика</h4>
+                        <p>Французский с цветами</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="background: linear-gradient(135deg, #d4a5a5 0%, #c48888 100%);">
+                    <div class="gallery-overlay">
+                        <h4>Нюдовая классика</h4>
+                        <p>Минимализм со стразами</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="background: linear-gradient(135deg, #a8d8ea 0%, #8cc5d8 100%);">
+                    <div class="gallery-overlay">
+                        <h4>Морской бриз</h4>
+                        <p>Геометрический дизайн</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" style="background: linear-gradient(135deg, #f7cac9 0%, #dec1c0 100%);">
+                    <div class="gallery-overlay">
+                        <h4>Пудровый шик</h4>
+                        <p>Элегантные линии</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Отзывы клиентов</h2>
+                <p class="section-subtitle animate-on-scroll">Что говорят обо мне</p>
+            </div>
+
+            <div class="reviews-grid">
+                <article class="review-card animate-on-scroll">
+                    <div class="review-header">
+                        <div class="review-avatar">АМ</div>
+                        <div class="review-info">
+                            <h4 class="review-name">Анна Михайлова</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Елена — настоящий профессионал! Делаю у неё маникюр уже больше года. 
+                        Покрытие держится отлично, ногти здоровые. Всегда приятная атмосфера 
+                        и индивидуальный подход. Рекомендую!"
+                    </p>
+                </article>
+
+                <article class="review-card animate-on-scroll">
+                    <div class="review-header">
+                        <div class="review-avatar">МК</div>
+                        <div class="review-info">
+                            <h4 class="review-name">Мария Козлова</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Потрясающий дизайн! Елена воплотила все мои пожелания и даже больше. 
+                        Очень аккуратная работа, стерильные инструменты. Маникюр выглядит 
+                        идеально даже через 3 недели!"
+                    </p>
+                </article>
+
+                <article class="review-card animate-on-scroll">
+                    <div class="review-header">
+                        <div class="review-avatar">ЕП</div>
+                        <div class="review-info">
+                            <h4 class="review-name">Екатерина Петрова</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Нашла своего мастера! Чуткая, внимательная, настоящий художник. 
+                        Каждый раз выхожу с отличным настроением и красивыми ноготками. 
+                        Спасибо за качество и заботу!"
+                    </p>
+                </article>
+
+                <article class="review-card animate-on-scroll">
+                    <div class="review-header">
+                        <div class="review-avatar">ОС</div>
+                        <div class="review-info">
+                            <h4 class="review-name">Ольга Смирнова</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Делала свадебный маникюр — получилось сказочно! Елена учла все детали, 
+                        подобрала идеальный оттенок под платье. Гости до сих пор спрашивают 
+                        контакты мастера!"
+                    </p>
+                </article>
+
+                <article class="review-card animate-on-scroll">
+                    <div class="review-header">
+                        <div class="review-avatar">ДВ</div>
+                        <div class="review-info">
+                            <h4 class="review-name">Дарья Волкова</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Хожу к Елене на педикюр и маникюр. Очень довольна! Работает быстро, 
+                        качественно, безболезненно. Использует отличные материалы. Цены 
+                        адекватные. Однозначно рекомендую!"
+                    </p>
+                </article>
+
+                <article class="review-card animate-on-scroll">
+                    <div class="review-header">
+                        <div class="review-avatar">НЛ</div>
+                        <div class="review-info">
+                            <h4 class="review-name">Наталья Лебедева</h4>
+                            <div class="review-stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-text">
+                        "Замечательный мастер с золотыми руками! После процедуры ногти выглядят 
+                        ухоженными и красивыми. Елена всегда подскажет, какой дизайн будет 
+                        актуален. Очень довольна!"
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title animate-on-scroll">Записаться на процедуру</h2>
+                <p class="section-subtitle animate-on-scroll">Свяжитесь со мной удобным способом</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Телефон</h4>
+                            <a href="tel:+79001234567">+7 (900) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💬</div>
+                        <div class="contact-details">
+                            <h4>WhatsApp / Telegram</h4>
+                            <a href="https://wa.me/79001234567">+7 (900) 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h4>Адрес</h4>
+                            <p>Москва, ул. Примерная, д. 10</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div class="contact-details">
+                            <h4>Время работы</h4>
+                            <p>Пн-Вс: 10:00 - 21:00</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📷</div>
+                        <div class="contact-details">
+                            <h4>Instagram</h4>
+                            <a href="https://instagram.com/elena_nails" target="_blank">@elena_nails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form animate-on-scroll" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Ваше имя *</label>
+                        <input type="text" id="name" name="name" required>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон *</label>
+                        <input type="tel" id="phone" name="phone" required>
+                        <span class="form-error"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Услуга</label>
+                        <select id="service" name="service">
+                            <option value="">Выберите услугу</option>
+                            <option value="manicure">Маникюр</option>
+                            <option value="pedicure">Педикюр</option>
+                            <option value="design">Дизайн</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Комментарий</label>
+                        <textarea id="message" name="message" rows="4"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить заявку</button>
+                    <div class="form-success" id="formSuccess">
+                        ✓ Спасибо! Ваша заявка отправлена. Я свяжусь с вами в ближайшее время.
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Elena Sokolova</h3>
+                    <p class="footer-text">Профессиональный мастер маникюра и педикюра с любовью к своему делу</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Навигация</h4>
+                    <ul class="footer-links">
+                        <li><a href="#services">Услуги</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#reviews">Отзывы</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Контакты</h4>
+                    <ul class="footer-contacts">
+                        <li><a href="tel:+79001234567">+7 (900) 123-45-67</a></li>
+                        <li>Москва, ул. Примерная, д. 10</li>
+                        <li>Пн-Вс: 10:00 - 21:00</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-heading">Социальные сети</h4>
+                    <div class="social-links">
+                        <a href="https://instagram.com/elena_nails" target="_blank" aria-label="Instagram">📷</a>
+                        <a href="https://wa.me/79001234567" target="_blank" aria-label="WhatsApp">💬</a>
+                        <a href="https://t.me/elena_nails" target="_blank" aria-label="Telegram">✈️</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Elena Sokolova. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
